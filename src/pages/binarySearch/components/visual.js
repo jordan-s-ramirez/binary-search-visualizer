@@ -151,12 +151,12 @@ export default function Visualize(props) {
           <Chip label={"Right Index: " + right} variant="outlined" />
         </Grid>
       </Grid>
-      <Grid container spacing={3} style={{alignItem:'center', justifyContent:'center'}}>
+      <Grid container spacing={2} style={{alignItem:'center', justifyContent:'center', marginTop:'0vh'}}>
         {
           currData.map((obj, idx) => {
             return(
-              <Grid item key={idx} sx={1}>
-                <div style={{backgroundColor: obj.status, textAlign: 'center', borderRadius:'20%', width:'150%'}}>
+              <Grid item key={idx}>
+                <div style={{border:"2px solid black", backgroundColor: obj.status, textAlign: 'center', borderRadius:'20%', width:'100px', height:'100px'}}>
                   <h1>{obj.value}</h1>
                 </div>
                 {/* <motion.div
